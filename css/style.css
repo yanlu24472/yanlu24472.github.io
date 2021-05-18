@@ -1,0 +1,40 @@
+div {
+  border: 1px solid #3333FF;
+  background-color: #7777FF;
+  margin: 5px;
+  padding: 5px;
+}
+
+#headerBox {}
+
+.linksBox,
+.textbox {}
+
+.textbox img {
+  width: 25%;
+  clear: left;
+}
+
+a:visited {}
+
+a:hover {}
+
+body {
+  background-color: green;
+}
+
+#content {
+  border: 2px dotted green;
+  width: 60%;
+  margin: auto;
+  background-color: green;
+}
+
+@media (max-width: 600px) {
+  #content {
+    width: 100%;
+  }
+
+  body {
+    background-color: white;
+  }

@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Thumbs Pannel</title>
-  </head>
-  <body>
-    <h1>Thumbs Pannel</h1>
-    <p>this is a panel to control the formbar.</p>
-    <p>thanks for the IP man!</p>
-    <a href="https://172.21.3.4:5000/tutd?thumb=up">Thumbs Up</a>
-      <a href="https://172.21.3.4:5000/tutd?thumb=down">Thumbs Down</a>
-        <a href="https://172.21.3.4:5000/tutd?wiggle">Wiggle</a>
-        <a href="http://172.21.3.4:5000/say?phrase=hi">hi</a>
-        <a href="http://172.21.3.4:5000/color?hex=66ccff">color blue</a>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thumbspanel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+  <div id="content">
+    <div id="headerBox">
+      <h1>Thumbspanel</h1>
+      <p id="phrasePara"></p>
+    </div>
+    <div class="textbox">
+      <h2>yanluislebron</h2>
+      <p>my name is yanluis. please give me money</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var phraseList = ['sword', 'pickaxe', 'shovel', 'cure for cancer']
+    var random = Math.random() * 4
+    random = Math.floor(random)
+    var phrasePara = document.getElementById('phrasePara')
+    phrasePara.innerHTML = phraseList[random]
+  </script>
+
+</body>
+
 </html>
